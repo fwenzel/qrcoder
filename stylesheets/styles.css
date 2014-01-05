@@ -792,8 +792,8 @@ section {
 }
 section #title {
   border: 0;
+  margin-bottom: 1em;
   outline: none;
-  margin: 0 0 50px 0;
   padding: 0 0 5px 0;
 }
 section #title h1 {
@@ -842,16 +842,21 @@ section footer .credits.right {
 }
 @media print, screen and (max-width: 480px) {
   #header {
-    margin-top: -20px;
+    display: none;
   }
 
   section {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   nav {
     display: none;
   }
+}
+
+section p {
+  margin: 0 auto;
+  text-align: center;
 }
 
 #qrtext {
@@ -862,12 +867,11 @@ section footer .credits.right {
 
 #qrcode {
   margin-top: 15px;
-  max-width: 400px;
   vertical-align: bottom;
-  width: 50%;
 }
 #qrcode img {
   background-color: #fff;
+  margin: 0 auto;
   padding: .5em;
 }
 
