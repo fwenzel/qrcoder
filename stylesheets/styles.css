@@ -715,7 +715,8 @@ dt {
   background: blue;
   margin: 6px auto;
 }
-#header nav li {
+#header nav li,
+#submit {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   list-style: none;
@@ -725,7 +726,8 @@ dt {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-#header nav li a {
+#header nav li a,
+#submit {
   color: white;
   border: 1px solid #5d910b;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
@@ -752,7 +754,9 @@ dt {
   display: inline-block;
   text-align: center;
 }
-#header nav li a:hover {
+
+#header nav li a:hover,
+#submit:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
@@ -853,17 +857,23 @@ section footer .credits.right {
 #qrtext {
   font-size: 200%;
   max-width: 400px;
-  width: 80%;
+  width: 75%;
 }
 
 #qrcode {
   margin-top: 15px;
   max-width: 400px;
+  vertical-align: bottom;
   width: 50%;
 }
 #qrcode img {
   background-color: #fff;
   padding: .5em;
+}
+
+#submit {
+  margin-left: 1em;
+  vertical-align: bottom;
 }
 
 footer {

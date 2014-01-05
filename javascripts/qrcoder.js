@@ -2,6 +2,7 @@
 
 var qrcode = new QRCode('qrcode');
 var txt = document.getElementById('qrtext');
+var submit = document.getElementById('submit');
 
 function makeCode() {
     if (!txt.value) {
@@ -21,5 +22,9 @@ txt.addEventListener('keydown', function(e) {
         makeCode();
     }
 });
+txt.addEventListener('focus', function() {
+    this.select();
+});
+submit.addEventListener('click', makeCode);
 
 })();
