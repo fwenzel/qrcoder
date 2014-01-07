@@ -6,7 +6,7 @@ var submit = document.getElementById('submit');
 
 function makeCode() {
     if (!txt.value) {
-        alert('Input a text');
+        alert('Enter some text to generate a QR code.');
         txt.focus();
         return;
     }
